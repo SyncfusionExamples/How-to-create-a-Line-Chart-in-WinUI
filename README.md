@@ -4,6 +4,8 @@ The WinUI Line Chart represents and visualizes time-dependent data to show trend
 
 The user guide Documentation helps you to acquire more knowledge on charts and their features. You can also refer to the Feature Tour site to get an overview of all the features in a chart.
 
+![WinUI Line Chart](https://user-images.githubusercontent.com/63223423/144577880-5c89a712-13df-48bd-8fcd-cbc37e16d76d.png)
+
 ### Step 1: 
 Create a simple project using the instructions given in the Getting Started with your first WinUI app documentation.
 
@@ -147,7 +149,6 @@ series.ShowDataLabels = true;
 chart.Series.Add(series);
 this.Content = chart;
 ```
-Output
  
 
 
