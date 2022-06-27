@@ -9,7 +9,7 @@
     mc:Ignorable="d">
 
     <Grid>
-        <chart:SfCartesianChart Palette="BlueChrome" Header="Annual Rainfall of Paris" Height="250" Width="400">
+        <chart:SfCartesianChart Header="Annual Rainfall of Paris" Height="250" Width="400">
 
             <chart:SfCartesianChart.DataContext>
                 <viewModel:ViewModel/>
@@ -24,14 +24,14 @@
             </chart:SfCartesianChart.Resources>
 
             <!--Initialize the horizontal axis for SfCartesianChart-->
-            <chart:SfCartesianChart.PrimaryAxis>
-                <chart:CategoryAxis PlotOffset="10" ShowGridLines="False"/>
-            </chart:SfCartesianChart.PrimaryAxis>
+            <chart:SfCartesianChart.XAxes>
+                <chart:CategoryAxis PlotOffsetStart="10" ShowGridLines="False"/>
+            </chart:SfCartesianChart.XAxes>
 
             <!--Initialize the vertical axis for SfCartesianChart-->
-            <chart:SfCartesianChart.SecondaryAxis>
-                <chart:NumericalAxis PlotOffset="30"/>
-            </chart:SfCartesianChart.SecondaryAxis>
+            <chart:SfCartesianChart.YAxes>
+                <chart:NumericalAxis PlotOffsetStart="30"/>
+            </chart:SfCartesianChart.YAxes>
 
             <!--Initialize the series for SfCartesianChart-->
             <chart:SfCartesianChart.Series>
@@ -45,5 +45,4 @@
             </chart:SfCartesianChart.Series>
         </chart:SfCartesianChart>
     </Grid>
-
 </Window>
