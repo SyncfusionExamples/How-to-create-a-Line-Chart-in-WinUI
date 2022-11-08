@@ -1,16 +1,14 @@
-# How-to-create-a-Line-Chart-in-WinUI
+# How to create a WinUI Line Chart (SfCartesianChart)?
 
-The WinUI Line Chart represents and visualizes time-dependent data to show trends at equal intervals. This section explains how to create WinUI Line Chart.
+The [WinUI Line Chart](https://www.syncfusion.com/winui-controls/charts/winui-line-chart) represents and visualizes time-dependent data to show trends at equal intervals. This section explains how to create WinUI Line Chart.
 
-The user guide Documentation helps you to acquire more knowledge on charts and their features. You can also refer to the Feature Tour site to get an overview of all the features in a chart.
-
-![WinUI Line Chart](https://user-images.githubusercontent.com/63223423/144577880-5c89a712-13df-48bd-8fcd-cbc37e16d76d.png)
+The user guide [Documentation](https://help.syncfusion.com/winui/cartesian-charts/getting-started) helps you to acquire more knowledge on charts and their features. You can also refer to the [Feature Tour](https://www.syncfusion.com/winui-controls/charts) site to get an overview of all the features in a chart.
 
 ### Step 1: 
-Create a simple project using the instructions given in the Getting Started with your first WinUI app documentation.
+Create a simple project using the instructions given in the Getting Started with your first [WinUI app](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app) documentation.
 
 ### Step 2: 
-Add Syncfusion.Chart.WinUI NuGet to the project and import the SfCartesianChart namespace as follows.
+Add [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet to the project and import the [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html?tabs=tabid-1) namespace as follows.
 
 **[XAML]**
 ```
@@ -68,7 +66,7 @@ public class Model
 }	
 ```
 ### Step 5: 
-Create a ViewModel class with a Data Collection property using the above model and initialize a list of objects as shown in the following code sample.
+Create a **ViewModel** class with a **Data Collection** property using the above model and initialize a list of objects as shown in the following code sample.
 
 **[C#]**
 ```
@@ -92,8 +90,8 @@ public class ViewModel
 }
 ```
 ### Step 6: 
-Set the ViewModel instance as the DataContext of your window; this is done to bind properties of ViewModel to the chart.
-> Note: Add namespace of ViewModel class to your XAML page, if you prefer to set DataContext in XAML.
+Set the **ViewModel** instance as the **DataContext** of your window; this is done to bind properties of **ViewModel** to the chart.
+> **Note:** Add namespace of **ViewModel** class to your XAML page, if you prefer to set **DataContext** in XAML.
 
 **[XAML]**
 ```
@@ -114,8 +112,8 @@ chart.DataContext = new ViewModel();
 ### Step 7: 
 Populate the chart with data.
 
-As we are going to visualize the comparison of annual rainfall in the data model, add LineSeries to SfCartesianChart.Series property, and then bind the Data property of the above ViewModel to the LineSeries ItemsSource property as shown in the following code sample.
-> Note: Need to set XBindingPath and YBindingPath properties so that series will fetch values from the respective properties in the data model to plot the series.
+As we are going to visualize the comparison of annual rainfall in the data model, add [LineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html) to [SfCartesianChart.Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) property, and then bind the Data property of the above ViewModel to the LineSeries [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ItemsSource) property as shown in the following code sample.
+> **Note:** Need to set [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties so that series will fetch values from the respective properties in the data model to plot the series.
 
 **[XAML]**
 ```
@@ -149,7 +147,12 @@ series.ShowDataLabels = true;
 chart.Series.Add(series);
 this.Content = chart;
 ```
- 
+
+## Output:
+
+![WinUI Line Chart](https://user-images.githubusercontent.com/63223423/144577880-5c89a712-13df-48bd-8fcd-cbc37e16d76d.png)
+
+KB article - [How to create a WinUI Line Chart (SfCartesianChart)?](https://www.syncfusion.com/kb/13540/how-to-create-a-winui-line-chart-sfcartesianchart)
 
 
 
